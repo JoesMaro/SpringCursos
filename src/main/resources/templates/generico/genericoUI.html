@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Página en Blanco</title>
+
+    <!-- Fuentes personalizadas para esta plantilla-->
+    <link th:href="@{/theme/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Estilos personalizados para esta plantilla-->
+    <link th:href="@{/theme/css/sb-admin-2.min.css}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Contenedor de la Página -->
+    <div id="wrapper">
+
+        <!-- Barra Lateral -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Barra lateral - Marca -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" th:href="@{/index}">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+
+            <!-- Separador -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Elemento del Menú - Panel -->
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/index}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Panel</span>
+                </a>
+            </li>
+
+            <!-- Separador -->
+            <hr class="sidebar-divider">
+
+            <!-- Título -->
+            <div class="sidebar-heading">
+                Interfaz
+            </div>
+
+            <!-- Elemento del Menú - Menú Desplegable de Páginas -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Componentes</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Componentes Personalizados:</h6>
+                        <a class="collapse-item" th:href="@{/buttons}">Botones</a>
+                        <a class="collapse-item" th:href="@{/cards}">Tarjetas</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Elemento del Menú - Menú Desplegable de Utilidades -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilidades</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Utilidades Personalizadas:</h6>
+                        <a class="collapse-item" th:href="@{/utilities-color}">Colores</a>
+                        <a class="collapse-item" th:href="@{/utilities-border}">Bordes</a>
+                        <a class="collapse-item" th:href="@{/utilities-animation}">Animaciones</a>
+                        <a class="collapse-item" th:href="@{/utilities-other}">Otras</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Separador -->
+            <hr class="sidebar-divider">
+
+            <!-- Título -->
+            <div class="sidebar-heading">
+                Complementos
+            </div>
+
+            <!-- Elemento del Menú - Menú Desplegable de Páginas -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Acciones</span>
+                </a>
+                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Acciones</h6>
+                        <a class="collapse-item" th:href="@{/Aula}">Aulas</a>
+                        <a class="collapse-item" th:href="@{/register}">Cursos</a>
+                        <a class="collapse-item" th:href="@{/forgot-password}">Estudiante</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Otras Páginas:</h6>
+                        <a class="collapse-item" th:href="@{/404}">CREAR</a>
+                        <a class="collapse-item active" th:href="@{/blank}">Página en Blanco</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Elemento del Menú - Gráficas -->
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/charts}">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Gráficas</span>
+                </a>
+            </li>
+
+            <!-- Elemento del Menú - Tablas -->
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/tables}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tablas</span>
+                </a>
+            </li>
+
+            <!-- Separador -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Botón de Ocultar la Barra Lateral -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- Fin de la Barra Lateral -->
+
+        <!-- Contenido Principal -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Contenido -->
+            <div id="content">
+
+                <!-- Barra Superior -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Botón de la Barra Lateral (Visible solo en pantallas pequeñas) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Barra de Búsqueda -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
+                                   aria-label="Buscar" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Barra Superior - Menú -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Elemento del Menú de Alertas -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Contador - Alertas -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Desplegable - Alertas -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                 aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Centro de Alertas
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Diciembre 12, 2019</div>
+                                        <span class="font-weight-bold">¡Un nuevo informe mensual está listo!</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- Fin de la Barra Superior -->
+
+                <!-- Inicio del Contenido de la Página -->
+                <div class="container-fluid">
+
+                    <!-- Encabezado de la Página -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Página en Blanco</h1>
+                    </div>
+
+                </div>
+                <!-- Fin del Contenido de la Página -->
+
+            </div>
+            <!-- Fin del Contenido -->
+
+            <!-- Pie de Página -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Derechos de autor &copy; Tu Sitio Web 2024</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- Fin del Pie de Página -->
+
+        </div>
+        <!-- Fin del Contenido Principal -->
+
+    </div>
+    <!-- Fin del Contenedor de la Página -->
+
+    <!-- Volver a la parte superior -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script th:src="@{/theme/vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{/theme/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/theme/vendor/jquery-easing/jquery.easing.min.js}"></script>
+    <script th:src="@{/theme/js/sb-admin-2.min.js}"></script>
+
+</body>
+
+</html>
+
+</html>
